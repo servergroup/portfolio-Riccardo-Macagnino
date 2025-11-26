@@ -1,0 +1,42 @@
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap; /* permette di andare a capo */
+  max-width: 600px;         /* più flessibile */
+  margin: auto;             /* centra la galleria */
+  gap: 5px;
+  box-shadow: 4px 4px 10px blue;
+  margin-top: 80px;
+}
+
+.gallery img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;        /* mantiene proporzioni */
+  border-radius: 6px;       /* opzionale: angoli arrotondati */
+  transition: box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  box-shadow: 0 0 10px blue;
+}
+
+.schermo {
+  width: 800px;
+  height: 800px;
+  display: flex;
+  justify-content: center;   /* centra i figli */
+  align-items: center;       /* centra i figli anche verticalmente */
+  margin: auto;              /* centra il blocco nella pagina */
+  box-shadow: 4px 4px 4px 4px blue;
+}
+
+.schermo img {
+  width: 800px;
+  height: 800px;
+  display: flex;
+  justify-content: center;   /* centra i figli */
+  align-items: center;       /* centra i figli anche verticalmente */
+  margin: auto;              /* centra il blocco nella pagina */
+  box-shadow: 4px 4px 4px 4px blue;
+}

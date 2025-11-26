@@ -1,0 +1,51 @@
+### ============================
+###   DEVELOPER CONTROLLER
+### ============================
+
+### Aggiungi un nuovo progetto
+POST http://localhost:8089/developer/addProject
+Content-Type: application/json
+
+{
+  "id_client":1,
+  "name_project": "Portfolio Web",
+  "name_developer": "Amtonio"
+}
+
+### Trova progetto per ID
+GET http://localhost:8089/developer/find/1
+
+### Elimina progetto
+DELETE http://localhost:8089/developer/del/1
+
+### Imposta progetto come FINISH
+GET http://localhost:8089/developer/finish/1
+
+
+
+### ============================
+###   CLIENT CONTROLLER
+### ============================
+
+### Aggiungi nuova richiesta progetto
+POST http://localhost:8089/client/newProject
+Content-Type: application/json
+
+{
+  
+ 
+  "type_request": "WEB_APP",
+  "description": "Sito portfolio personale",
+  "email": "riccardomaca01@gmail.com",
+  "notice_developer": true
+}
+
+### Trova richiesta per ID
+GET http://localhost:8089/client/find/37379
+
+### Elimina richiesta
+DELETE http://localhost:8089/client/del/0
+ 
+
+ 
+ 
